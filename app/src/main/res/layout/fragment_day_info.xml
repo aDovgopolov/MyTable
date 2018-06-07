@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.w.tabel.Fragment.DayInfoFragment"
+    >
+
+    <RelativeLayout
+        android:id="@+id/day_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMonthPanel">
+
+        <ImageButton
+            android:id="@+id/left_btn_undo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_undo_white_24dp"
+            android:rotationX="180"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <TextView
+            android:id="@+id/center_day_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/right_alert_dialog"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_more_horiz_white_24dp"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/day_info"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вход"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_enter_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="8^30"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_enter"
+            android:text="Выход"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_exit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_enter_time"
+            android:layout_alignParentRight="true"
+            android:text="17^30"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/work_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_exit_time">
+
+            <TextView
+                android:id="@+id/txt_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_exit"
+                android:text="Оплата за отработанное время"
+                android:textSize="20sp"
+                android:layout_weight="0.2"
+                android:padding="10dp"/>
+
+            <com.example.w.tabel.MyPresenter.Custom.Calendar.CustomCalendarView
+                android:id="@+id/custom_id_calendar_second_ft"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/txt_exit_time"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.8"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_layout"
+            android:text="День"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_day_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_layout"
+            android:layout_alignParentRight="true"
+            android:text="Зачтен"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

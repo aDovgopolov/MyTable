@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myPhoto">400dp</dimen>
+    <dimen name="myPanel">170dp</dimen>
+    <dimen name="myText">30dp</dimen>
+    <dimen name="myTimePassword">10dp</dimen>
+    <dimen name="marginCustomView">10dp</dimen>
+</resources>

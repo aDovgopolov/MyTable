@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_work_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.example.w.tabel.MyPresenter.Beidg.CustomView
+            android:id="@+id/firstCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+        <View
+            android:id="@+id/left_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginCustomView"
+            android:layout_marginBottom="@dimen/marginCustomView"
+            android:background="#31c41d"/>
+
+        <com.example.w.tabel.MyPresenter.Beidg.CustomView
+            android:id="@+id/second_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+        <View
+            android:id="@+id/right_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginCustomView"
+            android:layout_marginBottom="@dimen/marginCustomView"
+            android:background="#31c41d"/>
+
+        <com.example.w.tabel.MyPresenter.Beidg.CustomView
+            android:id="@+id/third_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

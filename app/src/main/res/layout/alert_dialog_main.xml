@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Единная страница авторизации
+запрашивает разрешение на вход
+с использованием вашей учетной
+записи"/>
+
+    <TextView
+        android:id="@+id/tx_password_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_message"
+        android:text="Пароль"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        android:textColor="@color/privat"/>
+
+    <RelativeLayout
+        android:id="@+id/edit_txt_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_password_mini">
+
+        <EditText
+            android:id="@+id/edit_txt_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Пароль"/>
+
+        <ImageButton
+            android:id="@+id/btn_dialpad"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_dialpad_black_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_menu"
+        android:text="Необходимо ввести пароль"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorred"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_remind"
+        android:text="Продолжить"
+        android:background="@color/privat"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_continue"
+        android:text="Отмена"
+        android:background="@color/privat"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

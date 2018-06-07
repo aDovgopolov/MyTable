@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.w.tabel.Activity.GlobalActivity"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id = "@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+    <include
+        android:id = "@+id/work_time"
+        android:layout_below="@+id/app_bar"
+        layout="@layout/work_time"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <include
+        android:id = "@+id/second_part"
+        android:layout_below="@+id/work_time"
+        layout="@layout/second_part"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <include
+        android:id = "@+id/calendar_part"
+        android:layout_below="@+id/second_part"
+        layout="@layout/recycle_view_grid"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <Button
+        android:id="@+id/btn_qr"
+        android:layout_below="@+id/calendar_part"
+        android:layout_width="match_parent"
+        android:background="@color/privat"
+        android:text="@string/btn_qr"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

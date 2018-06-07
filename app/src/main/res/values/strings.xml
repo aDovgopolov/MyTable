@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tabel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_beidg">Бейдж</string>
+    <string name="txt_map">Карта</string>
+    <string name="txt_list">Расчетный лист</string>
+    <string name="txt_sound">Оключить звук</string>
+    <string name="txt_tabel">Отключить табелирование</string>
+    <string name="txt_exit">Выход</string>
+    <string name="btn_qr">Сканировать код</string>
+</resources>

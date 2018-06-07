@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calendar_fr"
+    tools:context="com.example.w.tabel.Fragment.CalendarFragment">
+
+    <RelativeLayout
+        android:id="@+id/month_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMonthPanel">
+
+        <ImageButton
+            android:id="@+id/left_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:rotation="180"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/center_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/right_btn_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colordarkgray"
+        android:layout_below="@+id/month_info">
+    </GridView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/grid_view"
+        android:id="@+id/rvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"/>
+
+</RelativeLayout>

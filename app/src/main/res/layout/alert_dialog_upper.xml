@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/tv_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите ПИН-код"
+        android:textColor="@color/privat"/>
+
+    <EditText
+        android:id="@+id/edit_txt_pin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_pin"/>
+
+    <TextView
+        android:id="@+id/tv_piv_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_pin"
+        android:text="Введите ПИН-код"
+        android:textColor="@color/colorred"
+        android:visibility="invisible"/>
+</RelativeLayout>
